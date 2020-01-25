@@ -1,28 +1,19 @@
 <template>
   <div id="app">
-    <div class="w-full text-red-600">Navigation</div>
-    <HelloWorld/>
+    <div class="w-full shadow-md flex items-center">
+      <img src="./assets/logo.png" alt="Mountain range logo" class="h-16 mx-4">
+      <p>Navigation</p>
+    </div>
+    <Content/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Content from './components/Content.vue'
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    Content
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
