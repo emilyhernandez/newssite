@@ -1,8 +1,18 @@
 html {
   min-height: 100%;
-  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
 }
 
 body {
   height: 100%;
+  font-family: 'Poppins';
+  font-size: 14px;
+  & h1, h2, h3, h4, h5 {
+    font-family: 'News Cycle';
+  }
+
+  & * {
+    box-sizing: border-box;
+  }
 }

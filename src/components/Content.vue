@@ -1,14 +1,18 @@
 <template>
   <div class="w-full flex flex-col items-center">
-    <div class="max-w-4xl">
+    <main class="max-w-4xl">
       <NewsArticle
         v-for="(article, index) in state.articles"
         :key="`article-${index + 1}`"
         :title="article.title"
         :description="article.description"
-        class="my-4 border-b border-gray-200 py-4"
+        :image="article.urlToImage"
+        :published="article.publishedAt"
+        :link="article.url"
+        :source="article.source.name"
+        class="my-6"
       />
-    </div>
+    </main>
   </div>
 </template>
 
